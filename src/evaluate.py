@@ -107,7 +107,7 @@ def main():
     print("\n" + "┌" + "─" * 58 + "┐")
     print("│" + " " * 15 + "🎯 PRÉCISION DU MODÈLE" + " " * 21 + "│")
     print("└" + "─" * 58 + "┘")
-    print(f"\n  {emoji} R² (Coefficient de détermination) = {metrics['r2']:.4f}")
+    print(f"\n   R² (Coefficient de détermination) = {metrics['r2']:.4f}")
     print(f"     → Le modèle explique {metrics['r2']*100:.1f}% de la variance des prix")
     
     # Métriques complémentaires
