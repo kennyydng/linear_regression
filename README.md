@@ -40,8 +40,8 @@ Le projet comprend :
     - **Entraînement** : Calcul des paramètres θ0 et θ1 par descente de gradient
     - **Prédiction** : Estimation du prix pour un kilométrage donné
 - Bonus :
-    - **Menu interactif** qui donne accès aux differents programmes
-    - **Visualisation** : Graphiques des données et de la droite de régression
+    - **Menu interactif** : Commande pour chaque feature
+    - **Visualisation** : Graphiques des données + droite de régression
     - **Évaluation** : Calcul des métriques de précision (R², MAE, RMSE, MSE)
 
 ## 🚀 Installation
