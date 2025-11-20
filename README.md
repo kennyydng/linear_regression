@@ -10,14 +10,39 @@ Ce projet implémente un modèle de régression linéaire simple utilisant la de
 estimatePrice(mileage) = θ0 + θ1 × mileage
 ```
 
+### Calcul des paramètres (Descente de gradient)
+
+Les paramètres θ0 et θ1 sont calculés itérativement par descente de gradient :
+
+**Mise à jour des paramètres :**
+```
+θ0 := θ0 - α × (1/m) × Σ(estimatePrice(mileageᵢ) - priceᵢ)
+θ1 := θ1 - α × (1/m) × Σ(estimatePrice(mileageᵢ) - priceᵢ) × mileageᵢ
+```
+
+Où :
+- `α` (alpha) = learning rate (taux d'apprentissage)
+- `m` = nombre d'échantillons dans le dataset
+- `estimatePrice(mileageᵢ) = θ0 + θ1 × mileageᵢ`
+
+**Initialisation :**
+```
+θ0 = 0
+θ1 = 0
+```
+
+Le processus est répété jusqu'à convergence (typiquement 1000 itérations).
+
+### Fonctionnalités
+
 Le projet comprend :
-(Obligatoire)
-- **Entraînement** : Calcul des paramètres θ0 et θ1 par descente de gradient
-- **Prédiction** : Estimation du prix pour un kilométrage donné
-(Bonus)
-- **Menu interactif** qui donne accès aux differents programmes
-- **Visualisation** : Graphiques des données et de la droite de régression
-- **Évaluation** : Calcul des métriques de précision (R², MAE, RMSE, MSE)
+ - Obligatoire:
+    - **Entraînement** : Calcul des paramètres θ0 et θ1 par descente de gradient
+    - **Prédiction** : Estimation du prix pour un kilométrage donné
+- Bonus :
+    - **Menu interactif** qui donne accès aux differents programmes
+    - **Visualisation** : Graphiques des données et de la droite de régression
+    - **Évaluation** : Calcul des métriques de précision (R², MAE, RMSE, MSE)
 
 ## 🚀 Installation
 
